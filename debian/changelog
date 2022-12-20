@@ -1,0 +1,141 @@
+haskell-language-python (0.5.8-deepin1) unstable; urgency=medium
+
+  * Rebuild
+
+ -- Deepin Packages Builder <packages@deepin.org>  Mon, 14 Nov 2022 17:39:43 +0800
+
+haskell-language-python (0.5.8-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Ilias Tsitsimpis <iliastsi@debian.org>  Sat, 18 Jul 2020 12:33:56 +0300
+
+haskell-language-python (0.5.6-2) unstable; urgency=medium
+
+  * Patch for new containers
+
+ -- Gianfranco Costamagna <locutusofborg@debian.org>  Sun, 25 Aug 2019 15:36:08 +0200
+
+haskell-language-python (0.5.6-1) unstable; urgency=medium
+
+  * New upstream release (Closes: #903619, Closes: #917171)
+    - drop upstream patch
+
+ -- Gianfranco Costamagna <locutusofborg@debian.org>  Wed, 24 Jul 2019 23:21:29 +0200
+
+haskell-language-python (0.5.4-7) unstable; urgency=medium
+
+  * Bump debhelper compat level to 10
+
+ -- Ilias Tsitsimpis <iliastsi@debian.org>  Sun, 30 Sep 2018 21:13:44 +0300
+
+haskell-language-python (0.5.4-6) unstable; urgency=medium
+
+  [ Clint Adams ]
+  * Set Rules-Requires-Root to no.
+
+  [ Ilias Tsitsimpis ]
+  * Apply upstream patch for newer version of ghc (Closes: #895609)
+
+ -- Ilias Tsitsimpis <iliastsi@debian.org>  Fri, 29 Jun 2018 17:08:46 +0300
+
+haskell-language-python (0.5.4-5) unstable; urgency=medium
+
+  [ Ilias Tsitsimpis ]
+  * Change Priority to optional. Since Debian Policy version 4.0.1,
+    priority extra has been deprecated.
+  * Use the HTTPS form of the copyright-format URL
+  * Modify d/watch and Source field in d/copyright to use HTTPS
+  * Declare compliance with Debian policy 4.1.1
+  * Use salsa.debian.org URLs in Vcs-{Browser,Git} fields
+
+  [ Clint Adams ]
+  * Bump to Standards-Version 4.1.4.
+
+ -- Clint Adams <clint@debian.org>  Mon, 09 Apr 2018 20:04:55 -0400
+
+haskell-language-python (0.5.4-4) unstable; urgency=medium
+
+  * Bump debhelper compat level to 10.
+
+ -- Clint Adams <clint@debian.org>  Sun, 06 Nov 2016 12:14:19 -0500
+
+haskell-language-python (0.5.4-3) unstable; urgency=medium
+
+  * Upload to unstable as part of GHC 8 transition.
+
+ -- Clint Adams <clint@debian.org>  Thu, 27 Oct 2016 18:34:43 -0400
+
+haskell-language-python (0.5.4-2) experimental; urgency=medium
+
+  * Temporarily build-depend on ghc 8.
+
+ -- Clint Adams <clint@debian.org>  Sun, 16 Oct 2016 15:27:05 -0400
+
+haskell-language-python (0.5.4-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Clint Adams <clint@debian.org>  Sun, 04 Sep 2016 15:32:23 -0400
+
+haskell-language-python (0.5.2-1) unstable; urgency=medium
+
+  [ Dmitry Bogatov ]
+  * Use secure (https) uri in Vcs-Git field in 'debian/control'
+  * Bump standards version to 3.9.8 (no changes needed)
+
+  [ Ilias Tsitsimpis ]
+  * New upstream release
+  * Add haskell-utf8-string to build dependencies
+  * Update d/copyright file.
+    Rename license from 'language-python' to 'BSD-3-clause' (it's the
+    same license, and the one upstream is using). Also, bump copyright
+    years for both upstream and debian/* files.
+
+ -- Ilias Tsitsimpis <i.tsitsimpis@gmail.com>  Fri, 13 May 2016 23:18:28 +0300
+
+haskell-language-python (0.4.1-4) unstable; urgency=medium
+
+  * Switch Vcs-Git/Vcs-Browser headers to new location.
+
+ -- Clint Adams <clint@debian.org>  Thu, 03 Dec 2015 14:54:43 -0500
+
+haskell-language-python (0.4.1-3) experimental; urgency=medium
+
+  * Bump standards-version to 3.9.6
+  * Depend on haskell-devscripts >= 0.10 to ensure that this package
+    builds against GHC in experimental
+
+ -- Joachim Breitner <nomeata@debian.org>  Thu, 20 Aug 2015 10:28:04 +0200
+
+haskell-language-python (0.4.1-2) unstable; urgency=medium
+
+  * Upload to unstable
+
+ -- Joachim Breitner <nomeata@debian.org>  Mon, 27 Apr 2015 11:51:16 +0200
+
+haskell-language-python (0.4.1-1) experimental; urgency=medium
+
+  * Depend on haskell-devscripts 0.9, found in experimental
+  * Do not depend on transformers, which now comes with GHC
+  * New upstream release
+
+ -- Joachim Breitner <nomeata@debian.org>  Sun, 21 Dec 2014 10:00:23 +0100
+
+haskell-language-python (0.4.0-3) unstable; urgency=medium
+
+  * Depend on alex (Closes: #759503, again)
+
+ -- Joachim Breitner <nomeata@debian.org>  Thu, 28 Aug 2014 00:52:01 -0700
+
+haskell-language-python (0.4.0-2) unstable; urgency=medium
+
+  * Depend on happy (Closes: #759503)
+
+ -- Joachim Breitner <nomeata@debian.org>  Wed, 27 Aug 2014 17:45:08 -0700
+
+haskell-language-python (0.4.0-1) unstable; urgency=low
+
+  * Initial release.
+
+ -- Joachim Breitner <nomeata@debian.org>  Fri, 22 Aug 2014 07:48:26 -0700

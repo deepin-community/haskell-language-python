@@ -1,0 +1,80 @@
+Source: haskell-language-python
+Maintainer: Debian Haskell Group <pkg-haskell-maintainers@lists.alioth.debian.org>
+Uploaders:
+ Joachim Breitner <nomeata@debian.org>,
+Priority: optional
+Section: haskell
+Rules-Requires-Root: no
+Build-Depends:
+ alex,
+ cdbs,
+ debhelper (>= 10),
+ ghc (>= 8),
+ ghc-prof,
+ happy,
+ haskell-devscripts (>= 0.13),
+ libghc-monads-tf-dev (<< 0.2),
+ libghc-monads-tf-dev (>= 0.1),
+ libghc-monads-tf-prof,
+ libghc-utf8-string-dev (<< 2),
+ libghc-utf8-string-dev (>= 1),
+ libghc-utf8-string-prof,
+Build-Depends-Indep:
+ ghc-doc,
+ libghc-monads-tf-doc,
+ libghc-utf8-string-doc,
+Standards-Version: 4.5.0
+Homepage: https://github.com/bjpop/language-python
+Vcs-Browser: https://salsa.debian.org/haskell-team/DHG_packages/tree/master/p/haskell-language-python
+Vcs-Git: https://salsa.debian.org/haskell-team/DHG_packages.git [p/haskell-language-python]
+X-Description: parsing and pretty printing of Python code
+ language-python is a Haskell library for lexical analysis, parsing and pretty
+ printing Python code. It supports versions 2.x and 3.x of Python.
+
+Package: libghc-language-python-dev
+Architecture: any
+Depends:
+ ${haskell:Depends},
+ ${misc:Depends},
+ ${shlibs:Depends},
+Recommends:
+ ${haskell:Recommends},
+Suggests:
+ ${haskell:Suggests},
+Provides:
+ ${haskell:Provides},
+Description: ${haskell:ShortDescription}${haskell:ShortBlurb}
+ ${haskell:LongDescription}
+ .
+ ${haskell:Blurb}
+
+Package: libghc-language-python-prof
+Architecture: any
+Depends:
+ ${haskell:Depends},
+ ${misc:Depends},
+Recommends:
+ ${haskell:Recommends},
+Suggests:
+ ${haskell:Suggests},
+Provides:
+ ${haskell:Provides},
+Description: ${haskell:ShortDescription}${haskell:ShortBlurb}
+ ${haskell:LongDescription}
+ .
+ ${haskell:Blurb}
+
+Package: libghc-language-python-doc
+Architecture: all
+Section: doc
+Depends:
+ ${haskell:Depends},
+ ${misc:Depends},
+Recommends:
+ ${haskell:Recommends},
+Suggests:
+ ${haskell:Suggests},
+Description: ${haskell:ShortDescription}${haskell:ShortBlurb}
+ ${haskell:LongDescription}
+ .
+ ${haskell:Blurb}
